@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img-box {
+        width: 100px;
+        height: 500px;
+        margin: 10px;
+        border-radius: 50px;
+        background: url(alvin-engler-bIhpiQA009k-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        transition: width 0.5s ease-in-out;
+      }
+      @media screen  and (max-width: 600px) {
+       .img-box {
+
+        width: 50px;
+        height: 300px;
+       }
+       
+      }
+      
+      .img-box:nth-child(2) {
+        background: url(tim-van-der-kuip-CPs2X8JYmS8-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .img-box:nth-child(3) {
+        background: url(annie-spratt-hCb3lIB8L8E-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .img-box:nth-child(4) {
+        background: url(arlington-research-nFLmPAf9dVc-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .img-box h3 {
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        font-size: 30px;
+        cursor: pointer;
+        opacity: 0;
+        font-family: sans-serif;
+        font-weight: 800;
+        transition: bottom 0.5s opacity 0.5s;
+        transition: 0.5s ease;
+      }
+      .img-box h3:hover {
+        color: blue;
+      }
+      .img-box:hover h3 {
+        opacity: 1;
+        bottom: 25px;
+      }
+      .img-box p {
+        position: absolute;
+        bottom: 15%;
+        left: 23px;
+        font-size: 15px;
+        line-height: 25px;
+        color: white;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        opacity: 0;
+      }
+      .img-box:hover p {
+        opacity: 1;
+      }
+      .img-box:hover {
+        width: 380px;
+        cursor: pointer;
+        box-shadow: 7px 7px 10px rgba(128, 128, 128, 0.209);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gallery">
+        <div class="img-box">
+          <h3>Home</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            debitis quae nostrum quibusdam, accusamus ut cum tempora quo
+            blanditiis sit maxime quod dolore, temporibus molestiae qui quis
+            excepturi recusandae est!
+          </p>
+        </div>
+        <div class="img-box">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            debitis quae nostrum quibusdam, accusamus ut cum tempora quo
+            blanditiis sit maxime quod dolore, temporibus molestiae qui quis
+            excepturi recusandae est!
+          </p>
+        </div>
+        <div class="img-box">
+          <h3>Service</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            debitis quae nostrum quibusdam, accusamus ut cum tempora quo
+            blanditiis sit maxime quod dolore, temporibus molestiae qui quis
+            excepturi recusandae est!
+          </p>
+        </div>
+        <div class="img-box">
+          <h3>contact</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            debitis quae nostrum quibusdam, accusamus ut cum tempora quo
+            blanditiis sit maxime quod dolore, temporibus molestiae qui quis
+            excepturi recusandae est!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
